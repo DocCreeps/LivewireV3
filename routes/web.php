@@ -2,6 +2,7 @@
 
 use App\Livewire\Counter;
 use App\Livewire\Dice;
+use App\Livewire\ProgressBar;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,4 +22,5 @@ Route::get('/', function () {
 Route::get('/counter', Counter::class)->name('counter');
 
 Route::get('/dice', Dice::class)->name('dice');
+Route::get('/progressBar', ProgressBar::class)->name('progressBar');
 
