@@ -1,6 +1,7 @@
 <?php
 
 use App\Livewire\Counter;
+use App\Livewire\Dice;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,4 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/counter', Counter::class);
+Route::get('/counter', Counter::class)->name('counter');
+
+Route::get('/dice', Dice::class)->name('dice');
+
